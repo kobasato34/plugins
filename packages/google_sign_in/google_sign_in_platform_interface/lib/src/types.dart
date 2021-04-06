@@ -31,6 +31,7 @@ class GoogleSignInUserData {
     this.displayName,
     this.photoUrl,
     this.idToken,
+    this.serverAuthCode,
   });
 
   /// The display name of the signed in user.
@@ -65,6 +66,10 @@ class GoogleSignInUserData {
   /// A token that can be sent to your own server to verify the authentication
   /// data.
   String? idToken;
+
+  /// An auth code that can be sent to your own server to verify the
+  /// authentication data.
+  String? serverAuthCode;
 
   @override
   int get hashCode =>
